@@ -33,4 +33,5 @@ jobs:
       - name: Deploy app build to S3 bucket
         run: aws s3 sync ./dist/ s3://${{ secrets.AWS_S3_BUCKET_NAME }}/helloVue/latest
       - name: copy to cloud front 
-        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "/helloVue/latest/index.html"
+#        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "/helloVue/latest/index.html"
+        run: aws cloudfront create-invalidation --distribution-id E1TAIMY9JAF4KA --paths "/helloVue/latest/index.html" 

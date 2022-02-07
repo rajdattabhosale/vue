@@ -7,7 +7,7 @@
 <script>
 export default {
   data() {
-    return { message: "Hellodddd Vue" };
+    return { message: "Hellohjhwjhjdddd Vue" };
   },
 };
 </script>

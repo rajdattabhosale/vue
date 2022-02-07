@@ -17,7 +17,6 @@ jobs:
 
     steps: 
       - uses: actions/checkout@v2
-      - uses: awact/cloudfront-action@master
       - run: npm install
       - run: npm run build
         env: 
@@ -32,6 +31,11 @@ jobs:
           aws-distribution-id: ${{ secrets.AWS_DISTRIBUTION_ID }}
       - name: Deploy app build to S3 bucket
         run: aws s3 sync ./dist/ s3://${{ secrets.AWS_S3_BUCKET_NAME }}/helloVue/latest
-      - name: copy to cloud front 
-#        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "/helloVue/latest/index.html"
-        run: aws cloudfront create-invalidation --distribution-id E1TAIMY9JAF4KA --paths "/helloVue/latest/index.html" 
+      - name: copy to cloud front
+        uses: awact/cloudfront-action@master
+        env:
+          SOURCE_PATH: '/helloVue/latest/index.html'
+          AWS_REGION: 'us-west-2'
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}

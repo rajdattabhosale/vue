@@ -7,7 +7,7 @@
 <script>
 export default {
   data() {
-    return { message: "Hello Vuejshjhsjh***" };
+    return { message: "Hello Vuejshjhsjh*adad**" };
   },
 };
 </script>

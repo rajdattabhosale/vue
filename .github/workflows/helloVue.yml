@@ -29,6 +29,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Deploy app build to S3 bucket
-        run: aws s3 packages/helloVue/dist s3://${{ secrets.AWS_S3_BUCKET_NAME }}/helloVue/latest --delete
+        run: aws s3 sync packages/helloVue/dist s3://${{ secrets.AWS_S3_BUCKET_NAME }}/helloVue/latest --delete
       - name: copy to cloud front 
         run: cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "/helloVue/latest/index.html"

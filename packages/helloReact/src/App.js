@@ -14,7 +14,7 @@ export default ({ history }) => {
         </Switch>
         <br />
         <h1>React Home</h1>
-        <Link to="/react">*****Say React</Link>
+        <Link to="/react">******Say React</Link>
         <br />
         <Link to="/">Say Hello ** to the World ***</Link>
       </Router>

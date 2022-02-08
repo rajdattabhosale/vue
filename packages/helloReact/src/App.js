@@ -13,10 +13,10 @@ export default ({ history }) => {
           <Route path="/" component={helloWorld} />
         </Switch>
         <br />
-        <h1>Somehow complex Micro-FrontEnd in React</h1>
-        <Link to="/react">******Say React</Link>
+        <h5>Complex Micro-FrontEnd in React</h5>
+        <Link to="/react">Hello React</Link>
         <br />
-        <Link to="/">Say Hello ** to the World ***</Link>
+        <Link to="/">Hello World</Link>
       </Router>
     </div>
   );

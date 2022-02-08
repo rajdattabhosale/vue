@@ -8,11 +8,12 @@ const history = createBrowserHistory();
 
 const Header = () => (
   <div>
-    <Link to="/">***** Parent Application</Link>
+    <H1>Dashboard</H1>
+    <Link to="/">Home</Link>
     <br />
-    <Link to="/react">Menu 1 - React App</Link>
+    <Link to="/react">MFE - React App</Link>
     <br />
-    <Link to="/vue">Menu 2 - Vue App</Link>
+    <Link to="/vue">MFE - Vue App</Link>
   </div>
 );
 

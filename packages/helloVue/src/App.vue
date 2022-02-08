@@ -7,7 +7,7 @@
 <script>
 export default {
   data() {
-    return { message: "Hello Vue, lets see if its loading without parent deployment" };
+    return { message: "Simple Micro-FrontEnd in Vue" };
   },
 };
 </script>

@@ -30,7 +30,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
           aws-distribution-id: ${{ secrets.AWS_DISTRIBUTION_ID }}
       - name: Deploy app build to S3 bucket
-        run: aws s3 sync ./dist/ s3://${{ secrets.AWS_S3_BUCKET_NAME }}/helloReact/latest
+        run: aws s3 sync ./dist/ s3://${{ secrets.AWS_S3_BUCKET_NAME }}/helloReact/latest --delete
       - name: copy to cloud front
         uses: awact/cloudfront-action@master
         env:

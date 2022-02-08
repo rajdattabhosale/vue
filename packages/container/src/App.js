@@ -8,7 +8,7 @@ const history = createBrowserHistory();
 
 const Header = () => (
   <div>
-    <Link to="/">**** Parent Application</Link>
+    <Link to="/">***** Parent Application</Link>
     <br />
     <Link to="/react">Menu 1 - React App</Link>
     <br />

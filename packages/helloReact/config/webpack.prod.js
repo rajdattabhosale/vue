@@ -13,7 +13,7 @@ const prodConfig = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "helloreact",
+      name: "helloReact",
       filename: "remoteEntry.js",
       exposes: {
         "./HelloReactApp": "./src/bootstrap",

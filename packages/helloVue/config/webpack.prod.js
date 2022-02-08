@@ -13,7 +13,7 @@ const prodConfig = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "hellovue",
+      name: "helloVue",
       filename: "remoteEntry.js",
       exposes: {
         "./HelloVueApp": "./src/bootstrap",

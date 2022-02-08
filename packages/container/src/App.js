@@ -10,11 +10,9 @@ const Header = () => (
   <div>
     <Link to="/">Home</Link>
     <br />
-    <Link to="/react">Router based navigation - needs parent deployment</Link>
+    <Link to="/react">React App !!!</Link>
     <br />
-    <Link to="/vue">
-      Link based navigaation - individual children deployments
-    </Link>
+    <Link to="/vue">Vue App !!!</Link>
   </div>
 );
 

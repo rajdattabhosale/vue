@@ -7,7 +7,7 @@
 <script>
 export default {
   data() {
-    return { message: "Hello  New Vue ****" };
+    return { message: "Hello new distribution id New Vue ****" };
   },
 };
 </script>

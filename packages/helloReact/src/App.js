@@ -14,9 +14,9 @@ export default ({ history }) => {
         </Switch>
         <br />
         <h1>React Home</h1>
-        <Link to="/react">Router based navigation to React path</Link>
+        <Link to="/react">Say React ***</Link>
         <br />
-        <Link to="/">Say hello to the World!</Link>
+        <Link to="/">Say Hello to the World ***</Link>
       </Router>
     </div>
   );

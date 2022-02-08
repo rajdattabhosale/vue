@@ -3,7 +3,6 @@ import HelloReactApp from "./components/HelloReactApp";
 import { Route, Switch, Router, Link } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import HelloVueApp from "./components/HelloVueApp";
-import NewVueApp from "./components/NewVueApp";
 
 const history = createBrowserHistory();
 
@@ -14,8 +13,6 @@ const Header = () => (
     <Link to="/react">Menu 1 - React App</Link>
     <br />
     <Link to="/vue">Menu 2 - Vue App</Link>
-    <br />
-    <Link to="/newvue">**Menu 3 - New Vue App</Link>
   </div>
 );
 
@@ -28,7 +25,6 @@ export default () => {
         <Route path="/vue" component={HelloVueApp} />
         <Route path="/react" component={HelloReactApp} />
         <Route path="/" component={HelloReactApp} />
-        <Route path="/newvue" component={NewVueApp} />
       </Switch>
     </Router>
   );

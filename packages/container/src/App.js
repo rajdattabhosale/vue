@@ -23,6 +23,7 @@ export default () => {
       <hr />
       <Switch>
         <Route path="/vue" component={HelloVueApp} />
+        <Route path="/react" component={HelloReactApp} />
         <Route path="/" component={HelloReactApp} />
       </Switch>
     </Router>

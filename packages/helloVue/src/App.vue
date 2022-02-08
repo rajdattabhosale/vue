@@ -1,6 +1,7 @@
 <template>
   <div>
     {{ message }}
+    <h1>Header 1</h1>
   </div>
 </template>
 

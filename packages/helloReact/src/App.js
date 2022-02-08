@@ -13,7 +13,7 @@ export default ({ history }) => {
           <Route path="/" component={helloWorld} />
         </Switch>
         <br />
-        <h1>React Home</h1>
+        <h1>React Home, can we say this is true in this case too!!!</h1>
         <Link to="/react">******Say React</Link>
         <br />
         <Link to="/">Say Hello ** to the World ***</Link>

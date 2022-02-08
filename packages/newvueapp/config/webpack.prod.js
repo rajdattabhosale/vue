@@ -9,11 +9,11 @@ const prodConfig = {
   mode: "production",
   output: {
     filename: "[name].[contenthash].js",
-    publicPath: "/helloVue/latest/",
+    publicPath: "/newvueapp/latest/",
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "newVueApp",
+      name: "newvueapp",
       filename: "remoteEntry.js",
       exposes: {
         "./NewVueApp": "./src/bootstrap",

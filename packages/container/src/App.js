@@ -8,11 +8,13 @@ const history = createBrowserHistory();
 
 const Header = () => (
   <div>
-    <Link to="/">Home!</Link>
+    <Link to="/">Home</Link>
     <br />
-    <Link to="/react">use react**!!!</Link>
+    <Link to="/react">Router based navigation - needs parent deployment</Link>
     <br />
-    <Link to="/vue">use vue</Link>
+    <Link to="/vue">
+      Link based navigaation - individual children deployments
+    </Link>
   </div>
 );
 

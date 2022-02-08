@@ -8,11 +8,11 @@ const history = createBrowserHistory();
 
 const Header = () => (
   <div>
-    <Link to="/">Home</Link>
+    <Link to="/">Home!!!</Link>
     <br />
-    <Link to="/react">React App !!!</Link>
+    <Link to="/react">React App</Link>
     <br />
-    <Link to="/vue">Vue App !!!</Link>
+    <Link to="/vue">Vue App</Link>
   </div>
 );
 

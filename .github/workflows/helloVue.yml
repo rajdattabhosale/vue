@@ -30,11 +30,3 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Deploy app build to S3 bucket
         run: aws s3 sync ./dist/ s3://${{ secrets.AWS_S3_BUCKET_NAME }}/helloVue/latest --delete
-      - name: copy to cloud front
-        uses: awact/cloudfront-action@master
-        env:
-          SOURCE_PATH: '/helloVue/latest/remoteEntry.js'
-          AWS_REGION: 'us-west-2'
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          DISTRIBUTION_ID: ${{ secrets.AWS_DISTRIBUTION_ID }}

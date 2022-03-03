@@ -7,7 +7,7 @@
 <script>
 export default {
   data() {
-    return { message: "Simple Micro - FrontEnd in Vue" };
+    return { message: "Simple Micro FrontEnd in Vue" };
   },
 };
 </script>
